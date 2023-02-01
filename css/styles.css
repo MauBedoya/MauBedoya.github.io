@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+/* desplazamiento suave */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --main-color: #f1f1f1;
   --main-sec-text-color: #1E0E62;
@@ -95,7 +102,7 @@
   justify-content: center;
   list-style: none;
   font-weight: 700;
-  gap: 0.25rem;
+  gap: 0.5rem;
   animation: menu 600ms forwards;
 }
 .hidden-menu hr {
