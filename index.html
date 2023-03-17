@@ -4,206 +4,217 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Básico</title>
+  <link rel="shortcut icon" href="./assets/web-icon.png" type="image/x-icon">
+  <title>Mauricio Bedoya | Desarrollo Web</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <nav class="nav" id="navbar">
-    <!-- *hidden menu -->
-    <input type="checkbox" name="check" id="check">
-    <label for="check" class="check-label" id="menu-btn"><span></span></label>
-    <ul class="hidden-menu">
-      <li><a href="#welcome-section">Bienvenida</a></li>
-      <hr>
-      <li><a href="#skills-section">Habilidades</a></li>
-      <hr>
-      <li><a href="#projects-section">Proyectos</a></li>
-      <hr>
-      <li><a href="#contact-section">contacto</a></li>
-    </ul>
-    <!-- *end of hidden menu -->
-    <ul class="nav-list">
-      <li><a href="#welcome-section">Bienvenida</a></li>
-      <li><a href="#skills-section">Habilidades</a></li>
-      <li><a href="#projects-section">Proyectos</a></li>
-      <li><a href="#contact-section">Contacto</a></li>
+  <nav class="navbar">
+    <ul class="navbar__ul">
+      <li><a href="#welcome">Bienvenida</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
     </ul>
   </nav>
-  <section class="welcome-section" id="welcome-section">
-    <div class="presentation-text">
-      <h1 class="main-text">¡Hola 👋!, soy Mauricio. <br> Web Developer</h1>
-      <p class="main-paragraph">Soy estudiante de la carrera de ingeniería Industrial. Busco cada dia aprender o crear algo nuevo pensando en el futuro y su valor, con el desarrollo encontré lo que es una nueva pasión que me ayuda a cumplir con esta búsqueda interminable.</p>
-    </div>
-    <picture class="image-container">
-      <img class="main-image" src="./assets/hands-coding.png" alt="picture of hands coding">
-    </picture>
-  </section>
-    <section class="skills-section" id="skills-section">
-      <div class="skills-container">
-        <header class="skills-head">
-          <h2 class="main-text">Mis habilidades</h2>
-          <p class="main-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate molestias numquam repudiandae ab distinctio dolorum quidem quod vero fugit perferendis aliquid vel rerum ipsum eum, obcaecati quia quasi at natus!</p>
+  <main class="container">
+    <section class="container__welcome" id="welcome">
+      <div class="welcome__content content">
+        <header class="welcome__intro">
+          <h1 class="intro__title">¡Hola 👋!
+            <br>Soy Mauricio Bedoya. 
+            <br>Web Developer.
+          </h1>
+          <p class="intro__paragraph">Soy egresado de la carrera de ingeniería Industrial. Busco cada dia aprender o crear algo nuevo pensando en el futuro y su valor, con la programación encontré lo que es una nueva pasión que me ayuda a cumplir con esta búsqueda interminable.
+          <br>
+          Algunas habilidades que me ayudaran a cumplir mis metas son las que adquirí durante mi etapa en la universidad, tanto estudiando como conociendo compañeros y amigos, habilidades como el trabajo en equipo, empatía y pensamiento crítico.</p>
         </header>
-        <div class="tool-container">
-          <div class="tool-card">
-            <div class="tool-logos">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" width="45px" height="45px">
-                <g id="surface54753585">
-                <path style=" stroke:none;fill-rule:nonzero;fill:rgb(60.000002%,60.000002%,65.490198%);fill-opacity:1;" d="M 50.855469 6.664062 C 50.476562 6.242188 49.933594 6 49.367188 6 L 10.632812 6 C 10.066406 6 9.523438 6.242188 9.144531 6.664062 C 8.765625 7.089844 8.585938 7.65625 8.644531 8.21875 L 13.050781 47.867188 C 13.136719 48.671875 13.707031 49.347656 14.488281 49.566406 L 29.449219 53.84375 C 29.628906 53.894531 29.8125 53.921875 29.996094 53.921875 C 30.183594 53.921875 30.367188 53.894531 30.546875 53.84375 L 45.507812 49.566406 C 46.289062 49.347656 46.855469 48.671875 46.945312 47.867188 L 51.351562 8.21875 C 51.414062 7.65625 51.234375 7.089844 50.855469 6.664062 Z M 41.257812 20.859375 L 23.398438 20.859375 L 23.820312 25.945312 L 40.828125 25.945312 L 39.550781 40.964844 L 30.007812 44 L 29.910156 43.96875 L 20.472656 40.960938 L 19.957031 34.839844 L 24.578125 34.839844 L 24.78125 37.21875 L 30.054688 38.378906 L 35.238281 37.214844 L 35.789062 30.789062 L 19.609375 30.789062 L 18.355469 16 L 41.675781 16 Z M 41.257812 20.859375 "/>
-                </g>
-              </svg>
-              <svg fill="#9999A7" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="46px" height="46px" fill-rule="evenodd"><path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"/></svg>
+        <img src="./assets/hands-coding.png" class="welcome__img" alt="imagen de introducción">
+
+      </div>
+    </section>
+
+    <section class="container__stack" id="stack">
+      <div class="stack__content content">
+        <header class="content-header">
+          <h2 class="content-header__title">Stack</h2>
+          <p class="content-header__paragraph">Durante el proceso de aprendizaje, de manera autodidacta y en plataformas como FreeCodeCamp, OpenBootcamp y Undefined Academy, se adquirieron habilidades y conocimientos en tecnologías que son ampliamente utilizadas en proyectos de desarrollo web. Con la práctica y aplicación de estas tecnologías en proyectos, se busca trabajar con ellas de manera efectiva. La experiencia en estas plataformas permitió el desarrollo de habilidades en el diseño y desarrollo web del lado del frontend.</p>
+        </header>
+  
+        <section class="stack__group" id="tools">
+          <h3 class="group__name">Herramientas</h3>
+          <div class="group__card-container">
+            <div class="card-container__card">
+              <img src="./assets/vsc-logo.svg" alt="logo de Visual Studio Code">
+              <p>Visual Studio Code</p>
             </div>
-            <h3 class="secondary-text">Html y CSS</h3>
-            <p class="secondary-paragraph">Creación de proyectos básicos de front-end.</p>
-          </div>
-          <div class="tool-card">
-            <div class="tool-logos">
-              <svg fill="#9999A7" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="43px" height="41px">    <path d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z"/></svg>
+            <div class="card-container__card">
+              <img src="./assets/git-logo.svg" alt="logo de git">
+              <p>Git</p>
             </div>
-            <h3 class="secondary-text">JavaScript</h3> 
-            <p class="secondary-paragraph">Actualmente conocimiento básico de manipulación del DOM.</p>
-          </div>
-          <div class="tool-card">
-            <div class="tool-logos">
-              <svg fill="#9999A7" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="45px" height="45px">
-                <path d="M43.03,27.802c-1.747,0.009-3.261,0.429-4.53,1.054c-0.464-0.926-0.934-1.741-1.013-2.347 c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125c-0.007-0.089-0.109-0.518-1.117-0.526 c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.296,0.865-0.416,1.49c-0.177,0.914-2.012,4.174-3.055,5.879 c-0.341-0.666-0.631-1.252-0.691-1.716c-0.092-0.707-0.199-1.129-0.088-1.972c0.111-0.843,0.599-2.036,0.591-2.125 c-0.007-0.089-0.109-0.518-1.117-0.526c-1.008-0.007-1.87,0.194-1.972,0.46c-0.102,0.266-0.21,0.888-0.416,1.49 c-0.207,0.602-2.647,6.039-3.286,7.448c-0.326,0.718-0.609,1.295-0.809,1.689c-0.001-0.001-0.001-0.002-0.001-0.002 s-0.012,0.026-0.034,0.071c-0.171,0.335-0.273,0.521-0.273,0.521s0.001,0.003,0.003,0.007c-0.136,0.246-0.281,0.475-0.353,0.475 c-0.05,0-0.151-0.656,0.022-1.555c0.363-1.886,1.235-4.828,1.227-4.929c-0.004-0.052,0.162-0.564-0.57-0.833 c-0.711-0.26-0.965,0.174-1.03,0.175c-0.063,0.001-0.11,0.153-0.11,0.153s0.793-3.308-1.512-3.308c-1.44,0-3.436,1.576-4.42,3.004 c-0.62,0.338-1.948,1.063-3.357,1.837c-0.541,0.297-1.093,0.601-1.617,0.89c-0.036-0.039-0.071-0.079-0.108-0.118 c-2.794-2.981-7.958-5.089-7.739-9.096c0.08-1.457,0.586-5.293,9.924-9.946c7.649-3.812,13.773-2.763,14.831-0.438 c1.512,3.321-3.273,9.494-11.216,10.384c-3.027,0.339-4.62-0.834-5.017-1.271c-0.417-0.46-0.479-0.481-0.635-0.394 c-0.254,0.141-0.093,0.547,0,0.789c0.237,0.617,1.21,1.712,2.87,2.256c1.46,0.479,5.013,0.742,9.311-0.92 c4.813-1.862,8.571-7.041,7.468-11.37c-1.123-4.403-8.423-5.85-15.332-3.396c-4.112,1.461-8.563,3.754-11.764,6.747 c-3.806,3.56-4.412,6.658-4.162,7.952c0.889,4.6,7.228,7.595,9.767,9.815c-0.125,0.069-0.243,0.134-0.35,0.193 c-1.273,0.63-6.105,3.159-7.314,5.831c-1.371,3.031,0.218,5.206,1.271,5.499c3.26,0.907,6.606-0.725,8.404-3.407 c1.798-2.681,1.578-6.172,0.753-7.766c-0.01-0.02-0.022-0.039-0.032-0.059c0.329-0.195,0.664-0.392,0.996-0.587 c0.648-0.38,1.284-0.735,1.836-1.036c-0.309,0.846-0.535,1.86-0.653,3.325c-0.138,1.721,0.567,3.945,1.49,4.82 c0.406,0.385,0.895,0.394,1.205,0.394c1.074,0,1.564-0.893,2.103-1.95c0.662-1.296,1.249-2.804,1.249-2.804 s-0.737,4.075,1.271,4.075c0.731,0,1.467-0.949,1.795-1.432c0.001,0.005,0.001,0.008,0.001,0.008s0.019-0.031,0.056-0.095 c0.076-0.116,0.119-0.19,0.119-0.19s0.002-0.008,0.004-0.021c0.294-0.51,0.946-1.674,1.924-3.594 c1.263-2.48,2.475-5.586,2.475-5.586s0.113,0.76,0.482,2.015c0.217,0.739,0.679,1.556,1.043,2.339 c-0.293,0.407-0.473,0.64-0.473,0.64s0.002,0.004,0.005,0.012c-0.234,0.311-0.497,0.646-0.772,0.974 c-0.997,1.188-2.185,2.544-2.344,2.936c-0.187,0.461-0.143,0.801,0.219,1.073c0.264,0.199,0.735,0.23,1.227,0.197 c0.896-0.06,1.527-0.283,1.838-0.418c0.485-0.171,1.05-0.441,1.58-0.831c0.978-0.719,1.568-1.748,1.512-3.111 c-0.031-0.751-0.271-1.495-0.574-2.198c0.089-0.128,0.178-0.256,0.267-0.387c1.542-2.255,2.738-4.732,2.738-4.732 s0.113,0.76,0.482,2.015c0.187,0.636,0.556,1.329,0.887,2.009c-1.45,1.178-2.349,2.547-2.662,3.445 c-0.577,1.661-0.125,2.414,0.723,2.585c0.384,0.078,0.927-0.098,1.335-0.271c0.508-0.168,1.118-0.449,1.688-0.868 c0.978-0.719,1.919-1.726,1.862-3.089c-0.026-0.62-0.194-1.236-0.422-1.828c1.229-0.512,2.821-0.797,4.848-0.56 c4.349,0.508,5.202,3.223,5.039,4.359c-0.163,1.137-1.075,1.761-1.38,1.95c-0.305,0.189-0.398,0.254-0.372,0.394 c0.037,0.204,0.178,0.196,0.438,0.152c0.358-0.06,2.283-0.924,2.366-3.022C50.102,30.703,47.55,27.778,43.03,27.802z M9.512,39.102 c-1.44,1.571-3.453,2.165-4.316,1.665c-0.932-0.54-0.563-2.854,1.205-4.521c1.077-1.016,2.468-1.952,3.391-2.529 c0.21-0.126,0.518-0.312,0.893-0.537c0.062-0.035,0.097-0.055,0.097-0.055l-0.001-0.002c0.072-0.043,0.147-0.088,0.223-0.134 C11.647,35.363,11.024,37.453,9.512,39.102z M20.005,31.968c-0.502,1.223-1.552,4.352-2.191,4.184 c-0.549-0.144-0.883-2.523-0.11-4.863c0.389-1.178,1.22-2.586,1.709-3.133c0.786-0.879,1.652-1.167,1.862-0.81 C21.544,27.8,20.32,31.201,20.005,31.968z M28.675,36.105c-0.213,0.111-0.408,0.181-0.498,0.127 c-0.067-0.04,0.088-0.186,0.088-0.186s1.084-1.167,1.512-1.698c0.248-0.309,0.537-0.676,0.85-1.086 c0.003,0.041,0.004,0.082,0.004,0.122C30.627,34.782,29.277,35.725,28.675,36.105z M35.354,34.582 c-0.159-0.113-0.132-0.478,0.389-1.614c0.205-0.446,0.672-1.198,1.485-1.916c0.094,0.295,0.152,0.578,0.15,0.842 C37.367,33.653,36.112,34.31,35.354,34.582z"/>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 118 94" role="img"><title>Bootstrap</title>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="#9999A7"></path>
-              </svg>
+            <div class="card-container__card">
+              <img src="./assets/github-logo.svg" alt="logo de github">
+              <p>GitHub</p>
             </div>
-            <h3 class="secondary-text">Bootstrap y Sass</h3>
-            <p class="secondary-paragraph">Aplicación de conocimientos de framework Bootstrap y pre-procesador Sass en proyectos básicos.</p>
           </div>
+        </section>
+        
+        <section class="stack__group" id="frontend">
+          <h3 class="group__name">Frontend</h3>
+          <div class="group__card-container">
+            <div class="card-container__card">
+              <img src="./assets/javascript-logo.svg" alt="logo de javascript">
+              <p>JavaScript</p>
+            </div>
+            <div class="card-container__card">
+              <img src="./assets/html5-logo.svg" alt="logo de html5">
+              <p>HTML</p>
+            </div>
+            <div class="card-container__card">
+              <img src="./assets/css3-logo.svg" alt="logo de css3">
+              <p>CSS</p>
+            </div>
+            <div class="card-container__card">
+              <img src="./assets/sass-logo.svg" alt="logo de sass">
+              <p>Sass</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="container__projects" id="projects">
+      <div class="projects__content content">
+        <header class="content-header">
+          <h2 class="content-header__title">Proyectos</h2>
+          <p class="content-header__paragraph">Una de las partes mas interesantes es el momento de aplicar la teoría en la práctica, por ello aquí se presentan algunos de los proyectos realizados hasta el momento.</p>
+          <div class="btn-container">
+            <a class="content-header__git-btn" href="https://github.com/MauBedoya" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </header>
+
+        <div class="content__projects-container">
+          <div class="card-project">
+
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/AlitaBlog-thumbnail.jpg" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-project__description">
+              <h3 class="description__title">Blog Tributo a GUNNM</h3>
+              <p class="description__text">Blog básico realizado para practicar la maquetación y semántica en HTML.</p>
+            </div>
+
+            <div class="card-project__btn-container">
+              <a class="btn-container__btn" href="https://maubedoya.github.io/pagina-tributo-GUNNM/GUNNM.html" target="_blank" rel="noopener noreferrer"><img src="./assets/demo-logo.svg" alt=""><p>DEMO</p></a>
+              <a class="btn-container__btn" href="https://github.com/MauBedoya/pagina-tributo-GUNNM" target="_blank" rel="noopener noreferrer"><img src="./assets/github-logo.svg" alt=""><p>REPO</p></a>
+            </div>
+
+          </div>
+
+          <div class="card-project">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/cytusSurvey-thumbnail.jpg" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">Encuesta a Usuarios de CYTUS</h3>
+              <p class="description__text">Maquetado de formulario aplicando conocimientos sobre selectores en CSS.</p>
+            </div>
+            <div class="card-project__btn-container">
+              <a class="btn-container__btn" href="https://maubedoya.github.io/survey-form-cytus/surveyForm.html" target="_blank" rel="noopener noreferrer"><img src="./assets/demo-logo.svg" alt=""><p>DEMO</p></a>
+              <a class="btn-container__btn" href="https://github.com/MauBedoya/survey-form-cytus" target="_blank" rel="noopener noreferrer"><img src="./assets/github-logo.svg" alt=""><p>REPO</p></a>
+            </div>
+          </div>
+
+          <div class="card-project">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/apuntesJS-thumbnail.jpg" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">Pagina de Documentación Técnica</h3>
+              <p class="description__text">Blog de documentación técnica, donde se aplican conceptos aprendidos sobre maquetación y estilizado de diferentes elementos.</p>
+            </div>
+            <div class="card-project__btn-container">
+              <a class="btn-container__btn" href="https://maubedoya.github.io/documentacion-tecnica/javascript.html" target="_blank" rel="noopener noreferrer"><img src="./assets/demo-logo.svg" alt=""><p>DEMO</p></a>
+              <a class="btn-container__btn" href="https://github.com/MauBedoya/documentacion-tecnica" target="_blank" rel="noopener noreferrer"><img src="./assets/github-logo.svg" alt=""><p>REPO</p></a>
+            </div>
+          </div>
+
+          <a class="card-project" target="_blank" href="" rel="noopener noreferrer">
+            <div class="card-project__thumbnail">
+              <div class="thumbnail__image">
+                <img src="./assets/working-thumbnail.png" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>---</li>
+                  <li>---</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-project__description">
+              <h3 class="description__title">En proceso</h3>
+              <p class="description__text">Trabajando en ello...</p>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
-  <section class="projects-section" id="projects-section">
-    <header class="projects-head">
-      <h2 class="main-text">Mis Primeros proyectos</h2>
-      <p class="main-paragraph">Una pequeña galería de mis primeros proyectos, los cuales están en proceso de ser mejorados y/o adaptados a nuevos conocimientos sobre tecnologías y buenas practicas adquiridas hasta el momento.</p>
-      <a href="https://github.com/MauBedoya" target="_blank"><button class="btn-git">Github</button></a>
-    </header>
-    <div class="gallery">
-      <a class="project" href="https://maubedoya.github.io/pagina-tributo-GUNNM/GUNNM.html" target="_blank">
-        <figure class="thumbnail">
-          <img src="./assets/AlitaBlog-thumbnail.JPG" alt="imagen proyecto página tributo">
-          <div class="layer">
-            <h4>Tecnologías:</h4>
-            <ul>
-              <li>Html</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-        </figure>
-        <div class="project-text">
-          <h3 class="secondary-text project-title">Blog Tributo a GUNNM</h3>
-          <p class="secondary-paragraph">Blog sencillo aplicando conocimientos de diseño web responsivo para obtener la certificación de FreeCodeCamp.</p>
-        </div>
+    
+    <section class="container__contact" id="contact">
+      <h2 class="content-header__title">Contacto</h2>
+      <form class="contact__form" action="#" method="get">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="ej. Mauricio Bedoya" autocomplete="new-password" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="ej. example@email.com" autocomplete="new-password" required>
+        <label for="subject">Asunto</label>
+        <input type="text" name="subject" id="subject" placeholder="ej. Nuevo proyecto" autocomplete="new-password" required>
+        <label for="message">Descripción</label>
+        <textarea name="message" id="message" cols="30" rows="3" placeholder="Detalles del asunto" autocomplete="new-password" required></textarea>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <address>
+      <a href="https://github.com/MauBedoya" target="_blank" rel="noopener noreferrer">
+        <img class="footer-img" src="./assets/github-logo.svg" alt="logo de github">
       </a>
-      <a class="project" href="https://maubedoya.github.io/survey-form-cytus/surveyForm.html" target="_blank">
-        <figure class="thumbnail">
-          <img src="./assets/cytusSurvey-thumbnail.JPG" alt="imagen de proyecto encuesta">
-          <div class="layer">
-            <h4>Tecnologías:</h4>
-            <ul>
-              <li>Html</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-        </figure>
-        <div class="project-text">
-          <h3 class="secondary-text project-title">Encuesta a Usuarios de CYTUS</h3>
-          <p class="secondary-paragraph">Proyecto de creación de formulario moderno para obtener la certificación de FreeCodeCamp.</p>
-        </div>
+      <a href="https://www.linkedin.com/in/mauricio-bedoya-deheza-106a99252" target="_blank" rel="noopener noreferrer">
+        <img class="footer-img" src="./assets/linkedin-logo.svg" alt="logo de Linkedin">
       </a>
-      <a class="project" href="https://maubedoya.github.io/documentacion-tecnica/javascript.html" target="_blank">
-        <figure class="thumbnail">
-          <img src="./assets/apuntesJS-thumbnail.JPG" alt="imagen de proyecto de documentación">
-          <div class="layer">
-            <h4>Tecnologías:</h4>
-            <ul>
-              <li>Html</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-        </figure>
-        <div class="project-text">
-          <h3 class="secondary-text project-title">Pagina de Documentación Técnica</h3>
-          <p class="secondary-paragraph">Proyecto de creación de pagina de documentación técnica para obtener la certificación de FreeCodeCamp.</p>
-        </div>
-      </a>
-      <a class="project" href="" target="_blank">
-        <figure class="thumbnail">
-          <img src="./assets/working-thumbnail.png" alt="sin proyecto aun">
-          <div class="layer">
-            <h4>Tecnologías:</h4>
-            <ul>
-              <li>----</li>
-            </ul>
-          </div>
-        </figure>
-        <div class="project-text">
-          <h3 class="secondary-text project-title">En proceso</h3>
-          <p class="secondary-paragraph">Trabajando en ello...</p>
-        </div>
-      </a>
-      <a class="project" href="" target="_blank">
-        <figure class="thumbnail">
-          <img src="./assets/working-thumbnail.png" alt="sin proyecto aun">
-          <div class="layer">
-            <h4>Tecnologías:</h4>
-            <ul>
-              <li>----</li>
-            </ul>
-          </div>
-        </figure>
-        <div class="project-text">
-          <h3 class="secondary-text project-title">En proceso</h3>
-          <p class="secondary-paragraph">Trabajando en ello...</p>
-        </div>
-      </a>
-      <a class="project" href="" target="_blank">
-        <figure class="thumbnail">
-          <img src="./assets/working-thumbnail.png" alt="sin proyecto aun">
-          <div class="layer">
-            <h4>Tecnologías:</h4>
-            <ul>
-              <li>----</li>
-            </ul>
-          </div>
-        </figure>
-        <div class="project-text">
-          <h3 class="secondary-text project-title">En proceso</h3>
-          <p class="secondary-paragraph">Trabajando en ello...</p>
-        </div>
-      </a>
-    </div>
-  </section>
-  <footer class="contact" id="contact-section">
-    <div class="contact-head">
-      <h2 class="main-text">Si desea ponerse en contacto: 
-      </h2>
-      <p class="main-text"><a href="mailto:bedoyadehezamauricio@gmail.com">bedoyadehezamauricio@gmail.com</a> </p> 
-    </div>
-    <div class="icons">
-      <a href="https://github.com/MauBedoya" target="_blank">
-        <svg fill="#9999A7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40px" height="40px"><path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/mauricio-bedoya-deheza-106a99252" target="_blank">
-        <svg width="30" height="30" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.875 0.032959H2.12012C1.26074 0.032959 0.5625 0.740967 0.5625 1.61011V20.3308C0.5625 21.2 1.26074 21.908 2.12012 21.908H20.875C21.7344 21.908 22.4375 21.2 22.4375 20.3308V1.61011C22.4375 0.740967 21.7344 0.032959 20.875 0.032959ZM7.17383 18.783H3.93164V8.34351H7.17871V18.783H7.17383ZM5.55273 6.91772C4.5127 6.91772 3.67285 6.073 3.67285 5.03784C3.67285 4.00269 4.5127 3.15796 5.55273 3.15796C6.58789 3.15796 7.43262 4.00269 7.43262 5.03784C7.43262 6.07788 6.59277 6.91772 5.55273 6.91772ZM19.3271 18.783H16.085V13.7048C16.085 12.4939 16.0605 10.9363 14.4004 10.9363C12.7109 10.9363 12.4521 12.2546 12.4521 13.6169V18.783H9.20996V8.34351H12.3203V9.76929H12.3643C12.7988 8.94897 13.8584 8.08472 15.4355 8.08472C18.7168 8.08472 19.3271 10.2478 19.3271 13.0603V18.783Z" fill="#9999A7"/>
-        </svg>
-      </a>
-      <a href="mailto:bedoyadehezamauricio@gmail.com">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" width="40px" height="40px">
-          <g id="surface51566634">
-          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(60.000002%,60.000002%,65.490198%);fill-opacity:1;" d="M 8 10 C 5.8125 10 4 11.8125 4 14 L 4 46 C 4 48.1875 5.8125 50 8 50 L 52 50 C 54.1875 50 56 48.1875 56 46 L 56 14 C 56 11.8125 54.1875 10 52 10 Z M 13.398438 14 L 46.601562 14 L 30 26.269531 Z M 10 18.949219 L 30 33.730469 L 50 18.949219 L 50 46 L 10 46 Z M 10 18.949219 "/>
-          </g>
-          </svg>
-      </a>
-    </div>
+    </address>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
