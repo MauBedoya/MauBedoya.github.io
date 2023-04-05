@@ -6,14 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092727/web-icon_uofhdo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-  
-  
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="main.js"></script>
   <title>Mauricio Bedoya | Desarrollo Web</title>
-  <script type="module" crossorigin src="./assets/index-24b763dc.js"></script>
-  <link rel="stylesheet" href="./assets/index-d4c1001d.css">
 </head>
 <body>
   <nav class="navbar">
@@ -52,7 +47,7 @@
         </div>
         <section class="stack__group-content" id="tools">
           <h3 class="group-content__title">Herramientas</h3>
-          <div class="l-tech-cards">
+          <div class="group-content__tech-cards">
             <div class="tech-cards__card">
               <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092726/vsc-logo_gpfs3k.svg" alt="logo de Visual Studio Code">
               <p>Visual Studio Code</p>
@@ -69,7 +64,7 @@
         </section>
         <section class="stack__group-content" id="frontend">
           <h3 class="group-content__title">Frontend</h3>
-          <div class="l-tech-cards">
+          <div class="group-content__tech-cards">
             <div class="tech-cards__card">
               <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092726/javascript-logo_dnqiqw.svg" alt="logo de javascript">
               <p>JavaScript</p>
@@ -99,130 +94,94 @@
         <div class="content-btn__github">
           <a class="github__btn" href="https://github.com/MauBedoya" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <section class="l-projects">
-          <article class="l-projects__card">
-            <section class="card__main-content">
-              <header>
-                <div class="card__thumbnail">
-                  <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/AlitaBlog-thumbnail_qa45yt.jpg" class="thumbnail-img" alt="imagen del proyecto Blog">
-                  <div class="thumbnail__layer">
-                    <h4>Tecnologías</h4>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="main-content_text">
-                  <p class="tech-tags card__paragraph">HTML | CSS</p>
-                  <h3 class="card__title">Blog Tributo a GUNNM</h3>
-                  <time datetime="2023-02-01" class="card__paragraph card-date"></time>
-                </div>
-              </header>
-              <p class="card__paragraph main-content_text">Blog básico realizado para practicar la maquetación y semántica en HTML.
-              <br>
-              Proyecto para obtener la <a href="https://freecodecamp.org/certification/MauBedoya/responsive-web-design" target="_blank" rel="noopener noreferrer">certificación</a> de FreeCodeCamp
-              </p>
-            </section>
-              
-            <footer class="card__btn-container">
+        <section class="projects__group-content">
+          <article class="group-content__project-card">
+            <div class="project-card__thumbnail">
+              <div class="thumbnail__image">
+                <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/AlitaBlog-thumbnail_qa45yt.jpg" alt="imagen del proyecto Blog">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__description">
+              <h3 class="description__title">Blog Tributo a GUNNM</h3>
+              <p class="description__text">Blog básico realizado para practicar la maquetación y semántica en HTML.</p>
+            </div>
+            <div class="project-card__btn-container">
               <a class="btn-container__btn" href="https://maubedoya.github.io/pagina-tributo-GUNNM/GUNNM.html" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092724/demo-logo_cpvrrh.svg" alt=""><p>DEMO</p></a>
               <a class="btn-container__btn" href="https://github.com/MauBedoya/pagina-tributo-GUNNM" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/github-logo_wmxgsp.svg" alt=""><p>REPO</p></a>
-            </footer>
+            </div>
           </article>
-          <article class="l-projects__card">
-            <section class="card__main-content">
-              <header>
-                <div class="card__thumbnail">
-                  <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/cytusSurvey-thumbnail_wnlysw.jpg" class="thumbnail-img" alt="imagen del proyecto Encuesta">
-                  <div class="thumbnail__layer">
-                    <h4>Tecnologías</h4>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="main-content_text">
-                  <p class="tech-tags card__paragraph">HTML | CSS</p>
-                  <h3 class="card__title">Encuesta a Usuarios de CYTUS</h3>
-                  <time datetime="2023-02-05" class="card__paragraph card-date">Esta es la fecha</time>
-                </div>
-              </header>
-              <p class="card__paragraph main-content_text">Maquetado de formulario aplicando conocimientos sobre selectores en CSS.
-              <br>
-              Proyecto para obtener la <a href="https://freecodecamp.org/certification/MauBedoya/responsive-web-design" target="_blank" rel="noopener noreferrer">certificación</a> de FreeCodeCamp
-              </p>
-            </section>
-              
-            <footer class="card__btn-container">
+          <article class="group-content__project-card">
+            <div class="project-card__thumbnail">
+              <div class="thumbnail__image">
+                <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/cytusSurvey-thumbnail_wnlysw.jpg" alt="imagen del proyecto Encuesta">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__description">
+              <h3 class="description__title">Encuesta a Usuarios de CYTUS</h3>
+              <p class="description__text">Maquetado de formulario aplicando conocimientos sobre selectores en CSS.</p>
+            </div>
+            <div class="project-card__btn-container">
               <a class="btn-container__btn" href="https://maubedoya.github.io/survey-form-cytus/surveyForm.html" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092724/demo-logo_cpvrrh.svg" alt=""><p>DEMO</p></a>
               <a class="btn-container__btn" href="https://github.com/MauBedoya/survey-form-cytus" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/github-logo_wmxgsp.svg" alt=""><p>REPO</p></a>
-            </footer>
+            </div>
           </article>
-
-          <article class="l-projects__card">
-            <section class="card__main-content">
-              <header>
-                <div class="card__thumbnail">
-                  <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/apuntesJS-thumbnail_b7gfqg.jpg" class="thumbnail-img" alt="imagen del proyecto de Documentación Técnica">
-                  <div class="thumbnail__layer">
-                    <h4>Tecnologías</h4>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="main-content_text">
-                  <p class="tech-tags card__paragraph">HTML | CSS</p>
-                  <h3 class="card__title">Página de Documentación Técnica</h3>
-                  <time datetime="2023-02-10" class="card__paragraph card-date">Esta es la fecha</time>
-                </div>
-              </header>
-              <p class="card__paragraph main-content_text">Blog de documentación técnica, donde se aplican conceptos aprendidos sobre maquetación y estilizado de diferentes elementos.
-              <br>
-              Proyecto para obtener la <a href="https://freecodecamp.org/certification/MauBedoya/responsive-web-design" target="_blank" rel="noopener noreferrer">certificación</a> de FreeCodeCamp.
-              </p>
-            </section>
-
-            <footer class="card__btn-container">
+          <article class="group-content__project-card">
+            <div class="project-card__thumbnail">
+              <div class="thumbnail__image">
+                <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/apuntesJS-thumbnail_b7gfqg.jpg" alt="imagen del proyecto página de documentación">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__description">
+              <h3 class="description__title">Pagina de Documentación Técnica</h3>
+              <p class="description__text">Blog de documentación técnica, donde se aplican conceptos aprendidos sobre maquetación y estilizado de diferentes elementos.</p>
+            </div>
+            <div class="project-card__btn-container">
               <a class="btn-container__btn" href="https://maubedoya.github.io/documentacion-tecnica/javascript.html" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092724/demo-logo_cpvrrh.svg" alt=""><p>DEMO</p></a>
               <a class="btn-container__btn" href="https://github.com/MauBedoya/documentacion-tecnica" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/github-logo_wmxgsp.svg" alt=""><p>REPO</p></a>
-            </footer>
+            </div>
           </article>
-          
-          <article class="l-projects__card">
-            <section class="card__main-content">
-              <header>
-                <div class="card__thumbnail">
-                  <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092727/working-thumbnail_dxrwwa.png" class="thumbnail-img" alt="">
-                  <div class="thumbnail__layer">
-                    <h4>Tecnologías</h4>
-                    <ul>
-                      <li>---</li>
-                      <li>---</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="main-content_text">
-                  <p class="tech-tags card__paragraph">--- | ---</p>
-                  <h3 class="card__title">En proceso</h3>
-                  <!-- <time class="card__paragraph card-date">---</time> -->
-                </div>
-              </header>
-              <p class="card__paragraph main-content_text">Trabajando en ello...</p>
-            </section>
-              
-            <footer class="card__btn-container">
-              <a class="btn-container__btn" href="" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092724/demo-logo_cpvrrh.svg" alt=""><p>DEMO</p></a>
-              <a class="btn-container__btn" href="" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092725/github-logo_wmxgsp.svg" alt=""><p>REPO</p></a>
-            </footer>
+          <article class="group-content__project-card">
+            <div class="project-card__thumbnail">
+              <div class="thumbnail__image">
+                <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1679092727/working-thumbnail_dxrwwa.png" alt="">
+              </div>
+              <div class="thumbnail__layer">
+                <h4>Tecnologías</h4>
+                <ul>
+                  <li>---</li>
+                  <li>---</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-card__description">
+              <h3 class="description__title">En proceso</h3>
+              <p class="description__text">Trabajando en ello...</p>
+            </div>
           </article>
         </section>
       </div>
     </section>
-
   </main>
   <section class="contact__section" id="contact">
     <div class="section__content">
